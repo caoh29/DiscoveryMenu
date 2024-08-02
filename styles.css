@@ -1,0 +1,60 @@
+body {
+  font-family: Arial, sans-serif;
+}
+.container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1rem;
+}
+
+#add-filter-button {
+  height: 50%;
+}
+
+.query-box {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.filter-group {
+  display: flex;
+  margin: 10px 0;
+}
+.filter-group select, .filter-group input {
+  margin-right: 10px;
+  padding: 5px;
+}
+.search-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  background-color: #007BFF;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.recipes-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+.recipes-table th, .recipes-table td {
+  border: 1px solid #000;
+  padding: 10px;
+}
+.recipes-table th {
+  background-color: #f2f2f2;
+}
