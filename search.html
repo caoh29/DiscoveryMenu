@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Search</title>
@@ -45,5 +46,43 @@
 <!-- Custom JS -->
 <script src="js/main.js"></script>
 
+=======
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="search.html">Search</a>
+  </nav>
+  <div class="container">
+    <h1>What do you want to cook today?</h1>
+    <div class="flex-container">
+      <input id="query-input" type="text" class="query-box"  placeholder="Enter a recipe name">
+      <button id="add-filter-button">+</button>
+    </div>
+  
+    <div id="filters-container">
+    </div>
+
+    <button class="search-button" id="query-button">Search</button>
+
+    <table class="recipes-table">
+        <thead>
+            <tr>
+                <th>Recipe Name</th>
+                <th>Ingredients</th>
+                <th>Cooking Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be populated here -->
+        </tbody>
+    </table>
+  </div>
+  <script src="./js/search.js"></script>
+>>>>>>> origin/main
 </body>
 </html>
