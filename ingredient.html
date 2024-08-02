@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredient</title>
+    <!-- Favicon -->
+    <link rel="icon" href="images/cook_book_icon.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Recipe Finder</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="search.html">Search Recipes</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br/>
+
+<!-- Main Content -->
+<main class="container mt-5">
+    <div class="text-center">
+        <h1 id="ingredient-name" class="display-4"></h1>
+        <br/><br/>
+        <img id="ingredient-image" src="" alt="Ingredient Image" class="img-fluid rounded-circle" style="max-width: 300px;">
+    </div>
+    <br/><br/>
+    <div class="mt-4">
+        <div class="row">
+            <div class="col-md-6">
+                <p><strong>Aisle:</strong> <span id="ingredient-aisle" ></span></p>
+                <p><strong>Category:</strong> <span id="ingredient-category"></span></p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>Consistency:</strong> <span id="ingredient-consistency"></span></p>
+                <p><strong>Original Name:</strong> <span id="ingredient-original"></span></p>
+            </div>
+        </div>
+        <br/>
+        <h3 class="mt-4">Possible Units:</h3>
+        <div id="possible-units" class="d-flex flex-wrap">
+            <!-- Possible units will be dynamically inserted here -->
+        </div>
+    </div>
+</main>
+
+
+<!-- Footer -->
+<footer class="footer bg-dark text-white text-center">
+    <div class="container">
+        <p>&copy; 2024 Recipe Finder. All rights reserved.</p>
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Custom JS -->
+<script src="js/ingredient.js"></script>
+
+
+</body>
+</html>
