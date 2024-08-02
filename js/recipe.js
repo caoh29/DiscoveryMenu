@@ -1,5 +1,5 @@
 // API Key
-const apiKey = 'MY-API-KEY';
+const apiKey = 'Y9tDaJwWiHJEDuIWpWlbBGlGZneygjcH';
 
 // Function to extract the recipe ID from the URL
 function getRecipeIdFromUrl() {
