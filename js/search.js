@@ -159,17 +159,40 @@ document.getElementById('query-button').addEventListener('click', async function
 
   const data = await response.json();
   setTableData(data.results);
-  console.log(data.results);
-})
+
+});
 
 const setTableData = (data) => {
   const tableBody = document.getElementById('recipes-table-body');
   tableBody.innerHTML = '';
+  
   data.forEach(item => {
     const row = document.createElement('tr');
-    const nameCell = document.createElement('td');
-    nameCell.textContent = item.title;
-    row.appendChild(nameCell);
+    
+    // Create and append the id cell with a link
+    const idCell = document.createElement('td');
+    const idLink = document.createElement('a');
+    idLink.href = `/recipe.html?id=${item.id}`;
+    idLink.textContent = item.id;
+    idCell.appendChild(idLink);
+    row.appendChild(idCell);
+    
+    // Create and append the title cell
+    const titleCell = document.createElement('td');
+    titleCell.textContent = item.title;
+    row.appendChild(titleCell);
+    
+    // Create and append the image cell
+    const imageCell = document.createElement('td');
+    const img = document.createElement('img');
+    img.src = item.image;
+    img.alt = item.title;
+    img.style.width = '100px'; // You can adjust the width as needed
+    imageCell.appendChild(img);
+    row.appendChild(imageCell);
+    
     tableBody.appendChild(row);
   });
-}
+};
+
+
