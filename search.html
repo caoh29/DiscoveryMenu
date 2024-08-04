@@ -15,7 +15,7 @@
 
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">Recipe Finder</a>
+    <a class="navbar-brand" href="/">Recipe Finder</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -43,15 +43,16 @@
 
     <button class="search-button" id="query-button">Search</button>
 
-    <table class="recipes-table">
+
+    <table id="recipes-table">
         <thead>
         <tr>
+            <th>Id</th>
             <th>Recipe Name</th>
-            <th>Ingredients</th>
-            <th>Cooking Time</th>
+            <th>Picture</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody id="recipes-table-body">
         <!-- Results will be populated here -->
         </tbody>
     </table>
@@ -70,6 +71,6 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <!-- Custom JS -->
-<script src="js/main.js"></script>
+<script src="js/search.js"></script>
 </body>
 </html>
