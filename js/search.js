@@ -172,7 +172,7 @@ const setTableData = (data) => {
     // Create and append the id cell with a link
     const idCell = document.createElement('td');
     const idLink = document.createElement('a');
-    idLink.href = `/recipe.html?id=${item.id}`;
+    idLink.href = `/DiscoveryMenu/recipe.html?id=${item.id}`;
     idLink.textContent = item.id;
     idCell.appendChild(idLink);
     row.appendChild(idCell);
